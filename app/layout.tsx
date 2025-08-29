@@ -4,7 +4,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Liloo — Amour Létal · EPK",
   description: "EPK officiel de Liloo pour l'EP Amour Létal",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -13,3 +17,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
