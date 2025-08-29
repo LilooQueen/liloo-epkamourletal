@@ -149,7 +149,7 @@ export default function Page() {
                 Booking / Presse : <a className="underline hover:text-zinc-50" href="mailto:lilooqueen976@gmail.com">lilooqueen976@gmail.com</a>
               </p>
               <div className="mt-4 flex flex-wrap gap-3">
-                <a href="https://www.instagram.com/liloo_0ff" target="_blank" className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10">Instagram</a>
+                <a href="https://www.instagram.com/liloo_0ff/" target="_blank" className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10">Instagram</a>
                 <a href="https://youtube.com/@liloomusikoff" target="_blank" className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10">YouTube</a>
                 <a href="https://open.spotify.com/intl-fr/artist/72E4Nut0SG57XasMyjJ3y1" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10">Spotify</a>
               </div>
@@ -164,5 +164,6 @@ export default function Page() {
     </div>
   );
 }
+
 
 
