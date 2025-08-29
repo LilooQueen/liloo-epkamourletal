@@ -151,7 +151,7 @@ export default function Page() {
               <div className="mt-4 flex flex-wrap gap-3">
                 <a href="https://instagram.com/liloomusikoff" target="_blank" className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10">Instagram</a>
                 <a href="https://youtube.com/@liloomusikoff" target="_blank" className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10">YouTube</a>
-                <a href="https://open.spotify.com/search/Liloo%20Queen" target="_blank" className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10">Spotify</a>
+                <a href="https://open.spotify.com/intl-fr/artist/72E4Nut0SG57XasMyjJ3y1" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10">Spotify</a>
               </div>
             </div>
             <div className="text-sm text-zinc-400 leading-6">
@@ -164,3 +164,4 @@ export default function Page() {
     </div>
   );
 }
+
