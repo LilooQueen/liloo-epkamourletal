@@ -106,59 +106,32 @@ export default function Page() {
       </section>
 
       {/* TRACKLIST (avec icônes de la cover) */}
-      <section id="tracks" className="max-w-5xl mx-auto px-6 py-16 sm:py-24">
-        <h2 className="text-2xl sm:text-3xl font-bold text-zinc-100">Tracklist</h2>
-        <div className="mt-4 h-1 w-20 bg-gradient-to-r from-red-700 to-transparent rounded-full" />
-
-        <div className="mt-10 space-y-6">
-          {[
-            {
-              n: 1,
-              t: "Le Saut (Intro)",
-              e: <img src="/sky-wide.png" alt="Le Saut" className="h-6 w-6 inline-block" />,
-              d: "Plonger dans la musique, c’est sauter dans le vide sans filet — et renaître à chaque note."
-            },
-            {
-              n: 2,
-              t: "Mes Repères (feat. LVTI)",
-              e: <img src="/moon.png" alt="Mes Repères" className="h-6 w-6 inline-block" />,
-              d: "Quand l’amour qu’on croyait solide s’effondre, il faut apprendre à marcher sans béquilles."
-            },
-            {
-              n: 3,
-              t: "Amour Létal",
-              e: <img src="/bullet-wide.png" alt="Amour Létal" className="h-6 w-6 inline-block" />,
-              d: "Un baiser peut être une balle, un “je t’aime” une arme — l’amour tue autant qu’il fait vivre."
-            },
-            {
-              n: 4,
-              t: "Veneno",
-              e: <img src="/lips.png" alt="Veneno" className="h-6 w-6 inline-block" />,
-              d: "Désir vénéneux, attirance irrésistible : parfois, le poison devient la seule drogue qu’on réclame."
-            },
-            {
-              n: 5,
-              t: "Jusqu’à ce que je tombe (feat. Marshall Ibk)",
-              e: <img src="/ring-wide.png" alt="Jusqu’à ce que je tombe" className="h-6 w-6 inline-block" />,
-              d: "Sur le ring de l’amour, deux âmes s’affrontent, encaissent les coups et se relèvent encore — jusqu’à la dernière chute."
-            },
-            {
-              n: 6,
-              t: "Entre Nous",
-              e: <img src="/mirror-refined.png" alt="Entre Nous" className="h-6 w-6 inline-block" />,
-              d: "Dans le clair-obscur d’une relation toxique, deux âmes se consument jusqu’à la dernière braise."
-            }
-          ].map((track) => (
-            <div key={track.n} className="flex items-start space-x-3">
-              <div className="flex-shrink-0">{track.e}</div>
-              <div>
-                <p className="font-semibold text-zinc-100">{track.t}</p>
-                <p className="text-sm text-zinc-300/90">{track.d}</p>
-              </div>
-            </div>
-          ))}
+    {/* TRACKLIST (version cartes, style d'origine) */}
+<section id="tracks" className="max-w-5xl mx-auto px-6 py-16 sm:py-24">
+  <h2 className="text-2xl sm:text-3xl font-bold text-zinc-100">Tracklist & Punchlines</h2>
+  <div className="mt-4 h-1 w-20 bg-gradient-to-r from-red-700 to-transparent rounded-full" />
+  <ul className="mt-10 grid sm:grid-cols-2 gap-8">
+    {[
+      { n: 1, t: "Le Saut (Intro)", icon: "/sky-wide.png", d: "Plonger dans la musique, c’est sauter dans le vide sans filet — et renaître à chaque note." },
+      { n: 2, t: "Mes Repères (feat. LVTI)", icon: "/moon.png", d: "Quand l’amour qu’on croyait solide s’effondre, il faut apprendre à marcher sans béquilles." },
+      { n: 3, t: "Amour Létal", icon: "/bullet-wide.png", d: "Un baiser peut être une balle, un “je t’aime” une arme — l’amour tue autant qu’il fait vivre." },
+      { n: 4, t: "Veneno", icon: "/lips.png", d: "Désir vénéneux, attirance irrésistible : parfois, le poison devient la seule drogue qu’on réclame." },
+      { n: 5, t: "Jusqu’à ce que je tombe (feat. Marshall Ibk)", icon: "/ring-wide.png", d: "Sur le ring de l’amour, deux âmes s’affrontent, encaissent les coups et se relèvent encore — jusqu’à la dernière chute." },
+      { n: 6, t: "Entre Nous", icon: "/mirror-refined.png", d: "Dans le clair-obscur d’une relation toxique, deux âmes se consument jusqu’à la dernière braise." },
+    ].map((it) => (
+      <li key={it.n} className="p-5 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
+        <div className="flex items-center gap-3 text-zinc-300">
+          <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-b from-zinc-600 to-zinc-800 border border-white/10 overflow-hidden">
+            <img src={it.icon} alt={it.t} className="h-6 w-6 object-contain" />
+          </span>
+          <h3 className="text-lg font-semibold text-zinc-100">{it.n}. {it.t}</h3>
         </div>
-      </section>
+        <p className="mt-3 text-sm text-zinc-300/90">{it.d}</p>
+      </li>
+    ))}
+  </ul>
+</section>
+
 
       {/* VISUELS */}
       <section id="gallery" className="max-w-6xl mx-auto px-6 pb-10 sm:pb-20">
@@ -211,3 +184,4 @@ export default function Page() {
     </div>
   );
 }
+
