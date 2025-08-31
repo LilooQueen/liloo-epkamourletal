@@ -30,20 +30,20 @@ export default function Page() {
     <div className="min-h-screen bg-[#05050b] text-zinc-200 selection:bg-red-700/40 selection:text-zinc-50">
       {/* Navigation */}
       <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-black/40 border-b border-zinc-800/60">
-        <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
-          <div className="font-semibold tracking-widest uppercase text-zinc-100">
-            Liloo · <span className="text-zinc-300">Amour Létal</span>
-          </div>
-          <div className="hidden sm:flex items-center gap-6 text-sm">
-            <a href="#bio" className="hover:text-zinc-50">Bio</a>
-            <a href="#story" className="hover:text-zinc-50">Story</a>
-            <a href="#tracks" className="hover:text-zinc-50">Tracklist</a>
-            <a href="#gallery" className="hover:text-zinc-50">Visuels</a>
-            <a href="#contacts" className="hover:text-zinc-50">Contacts</a>
-          </div>
-          <a href="#contacts" className="px-3 py-1.5 rounded-full text-xs font-semibold bg-gradient-to-r from-zinc-300 to-zinc-500 text-black shadow hover:opacity-90">EPK</a>
-        </nav>
-      </header>
+  <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
+    <div className="font-semibold tracking-widest uppercase text-zinc-100">
+      Liloo · <span className="text-zinc-300">Amour Létal</span>
+    </div>
+    <div className="hidden sm:flex items-center gap-6 text-sm">
+      <a href="#bio" className="hover:text-zinc-50">Bio</a>
+      <a href="#story" className="hover:text-zinc-50">Story</a>
+      <a href="#tracks" className="hover:text-zinc-50">Tracklist</a>
+      <a href="#gallery" className="hover:text-zinc-50">Visuels</a>
+      <a href="#contacts" className="hover:text-zinc-50">Contacts</a>
+    </div>
+  </nav>
+</header>
+
 
       {/* Hero */}
       <section className="relative pt-14">
@@ -147,59 +147,36 @@ export default function Page() {
     <div className="mt-4 h-1 w-20 bg-gradient-to-r from-red-700 to-transparent rounded-full" />
 
     <div className="mt-8 grid sm:grid-cols-2 gap-6">
-      {/* Partie gauche */}
       <div>
         <p className="text-zinc-300">
           Booking / Presse :{" "}
-          <a
-            className="underline hover:text-zinc-50"
-            href="mailto:lilooqueen976@gmail.com"
-          >
+          <a className="underline hover:text-zinc-50" href="mailto:lilooqueen976@gmail.com">
             lilooqueen976@gmail.com
           </a>
         </p>
 
         <div className="mt-4 flex flex-wrap gap-3">
-          <a
-            href="https://instagram.com/liloomusikoff"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10 
-                       transition duration-300 hover:shadow-[0_0_12px_rgba(220,38,38,0.5)]"
-          >
+          <a href="https://instagram.com/liloomusikoff" target="_blank" rel="noopener noreferrer"
+             className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10 transition duration-300 hover:shadow-[0_0_12px_rgba(220,38,38,0.5)]">
             Instagram
           </a>
-          <a
-            href="https://youtube.com/@liloomusikoff"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10 
-                       transition duration-300 hover:shadow-[0_0_12px_rgba(220,38,38,0.5)]"
-          >
+          <a href="https://youtube.com/@liloomusikoff" target="_blank" rel="noopener noreferrer"
+             className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10 transition duration-300 hover:shadow-[0_0_12px_rgba(220,38,38,0.5)]">
             YouTube
           </a>
-          <a
-            href="https://open.spotify.com/artist/4RquyU6j4Fhyj0czd5V2O3"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10 
-                       transition duration-300 hover:shadow-[0_0_12px_rgba(220,38,38,0.5)]"
-          >
+          <a href="https://open.spotify.com/artist/4RquyU6j4Fhyj0czd5V2O3" target="_blank" rel="noopener noreferrer"
+             className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10 transition duration-300 hover:shadow-[0_0_12px_rgba(220,38,38,0.5)]">
             Spotify
           </a>
         </div>
       </div>
 
-      {/* Partie droite */}
       <div className="text-sm text-zinc-400 leading-6">
         <p>Retrouvez Liloo sur toutes les plateformes et réseaux sociaux.</p>
       </div>
     </div>
   </div>
 </footer>
-
-
-
 
 
 
