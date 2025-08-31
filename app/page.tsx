@@ -141,22 +141,64 @@ export default function Page() {
       </section>
 
       {/* Contacts */}
-      <footer id="contacts" className="relative border-t border-white/10 bg-black/60">
-        <div className="max-w-6xl mx-auto px-6 py-12">
-          <h2 className="text-2xl sm:text-3xl font-bold text-zinc-100">Contacts & Liens</h2>
-          <div className="mt-4 h-1 w-20 bg-gradient-to-r from-red-700 to-transparent rounded-full" />
-          <div className="mt-8 grid sm:grid-cols-2 gap-6">
-            <div>
-              <p className="text-zinc-300">
-                Booking / Presse : <a className="underline hover:text-zinc-50" href="mailto:lilooqueen976@gmail.com">lilooqueen976@gmail.com</a>
-              </p>
-              <div className="mt-4 flex flex-wrap gap-3">
-                <a href="https://www.instagram.com/liloo_0ff/" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10">Instagram</a>
-                <a href="https://youtube.com/@liloomusikoff" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10">YouTube</a>
-                <a href="https://open.spotify.com/intl-fr/artist/72E4Nut0SG57XasMyjJ3y1" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10">Spotify</a>
-              </div>
-            </div>
-            
+<footer id="contacts" className="relative border-t border-white/10 bg-black/60">
+  <div className="max-w-6xl mx-auto px-6 py-12">
+    <h2 className="text-2xl sm:text-3xl font-bold text-zinc-100">Contacts & Liens</h2>
+    <div className="mt-4 h-1 w-20 bg-gradient-to-r from-red-700 to-transparent rounded-full" />
+
+    <div className="mt-8 grid sm:grid-cols-2 gap-6">
+      {/* Partie gauche */}
+      <div>
+        <p className="text-zinc-300">
+          Booking / Presse :{" "}
+          <a
+            className="underline hover:text-zinc-50"
+            href="mailto:lilooqueen976@gmail.com"
+          >
+            lilooqueen976@gmail.com
+          </a>
+        </p>
+
+        <div className="mt-4 flex flex-wrap gap-3">
+          <a
+            href="https://instagram.com/liloomusikoff"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10 
+                       transition duration-300 hover:shadow-[0_0_12px_rgba(220,38,38,0.5)]"
+          >
+            Instagram
+          </a>
+          <a
+            href="https://youtube.com/@liloomusikoff"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10 
+                       transition duration-300 hover:shadow-[0_0_12px_rgba(220,38,38,0.5)]"
+          >
+            YouTube
+          </a>
+          <a
+            href="https://open.spotify.com/artist/4RquyU6j4Fhyj0czd5V2O3"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10 
+                       transition duration-300 hover:shadow-[0_0_12px_rgba(220,38,38,0.5)]"
+          >
+            Spotify
+          </a>
+        </div>
+      </div>
+
+      {/* Partie droite */}
+      <div className="text-sm text-zinc-400 leading-6">
+        <p>Retrouvez Liloo sur toutes les plateformes et réseaux sociaux.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
 
 
 
