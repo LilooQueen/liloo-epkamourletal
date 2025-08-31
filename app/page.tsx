@@ -156,16 +156,7 @@ export default function Page() {
                 <a href="https://open.spotify.com/intl-fr/artist/72E4Nut0SG57XasMyjJ3y1" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10">Spotify</a>
               </div>
             </div>
-            <div className="text-sm text-zinc-400 leading-6">
-              <p>Site EPK one-page réalisé pour <strong>Liloo</strong>. Style glacial (noir/bleu nuit) avec accents rouge sang subtils.</p>
-            </div>
-          </div>
-          <div className="mt-10 text-xs text-zinc-500">© {new Date().getFullYear()} Liloo — Amour Létal · EPK</div>
-        </div>
-      </footer>
-    </div>
-  );
-}
+            
 
 
 
