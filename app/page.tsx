@@ -111,11 +111,11 @@ export default function Page() {
             { n: 5, t: "Jusqu’à ce que je tombe (feat. Marshall Ibk)", icon: "/ring-wide.png", d: "Sur le ring de l’amour, deux âmes s’affrontent, encaissent les coups et se relèvent encore — jusqu’à la dernière chute." },
             { n: 6, t: "Entre Nous", icon: "/mirror-refined.png", d: "Dans le clair-obscur d’une relation toxique, deux âmes se consument jusqu’à la dernière braise." },
           ].map((it) => (
-            <li key={it.n} className="p-5 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
+            <li key={it.n} className="group p-5 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
               <div className="flex items-center gap-3 text-zinc-300">
-                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-b from-zinc-600 to-zinc-800 border border-white/10 overflow-hidden">
-                  <img src={it.icon} alt={it.t} className="h-6 w-6 object-contain" />
-                </span>
+                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-b from-zinc-600 to-zinc-800 border border-white/10 overflow-hidden transform transition-transform duration-300 group-hover:scale-110">
+  <img src={it.icon} alt={it.t} className="h-6 w-6 object-contain" />
+</span>
                 <h3 className="text-lg font-semibold text-zinc-100">{it.n}. {it.t}</h3>
               </div>
               <p className="mt-3 text-sm text-zinc-300/90">{it.d}</p>
@@ -166,6 +166,7 @@ export default function Page() {
     </div>
   );
 }
+
 
 
 
