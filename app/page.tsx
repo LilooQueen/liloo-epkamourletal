@@ -113,7 +113,7 @@ export default function Page() {
           ].map((it) => (
             <li key={it.n} className="group p-5 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
               <div className="flex items-center gap-3 text-zinc-300">
-                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-b from-zinc-600 to-zinc-800 border border-white/10 overflow-hidden transform transition-transform duration-300 group-hover:scale-110">
+                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-b from-zinc-600 to-zinc-800 border border-white/10 overflow-hidden transform transition-transform duration-300 group-hover:scale-125">
   <img src={it.icon} alt={it.t} className="h-6 w-6 object-contain" />
 </span>
                 <h3 className="text-lg font-semibold text-zinc-100">{it.n}. {it.t}</h3>
@@ -166,6 +166,7 @@ export default function Page() {
     </div>
   );
 }
+
 
 
 
