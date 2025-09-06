@@ -150,11 +150,11 @@ export default function Page() {
               <a className="underline hover:text-zinc-50" href="mailto:lilooqueen976@gmail.com">lilooqueen976@gmail.com</a>
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
-              <a href="https://instagram.com/liloomusikoff" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.instagram.com/liloo_0ff/" target="_blank" rel="noopener noreferrer"
                  className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10 transition duration-300 hover:shadow-[0_0_12px_rgba(220,38,38,0.5)]">
                 Instagram
               </a>
-              <a href="https://youtube.com/@liloomusikoff" target="_blank" rel="noopener noreferrer"
+              <a href="https://youtube.com/@liloo_off?si=E1G6MOvhMcUdCrkd" target="_blank" rel="noopener noreferrer"
                  className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 border border-white/10 transition duration-300 hover:shadow-[0_0_12px_rgba(220,38,38,0.5)]">
                 YouTube
               </a>
@@ -170,3 +170,4 @@ export default function Page() {
     </div>
   );
 }
+
